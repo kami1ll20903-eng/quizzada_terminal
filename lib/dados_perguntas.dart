@@ -1,4 +1,4 @@
-final List> dadosPerguntas = [
+final List<Map<String, dynamic>> dadosPerguntas = [
   // =========================================================================
   // TEMA 1: Engenharia de Controle e Automação
   // =========================================================================
@@ -18,7 +18,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'facil',
-    'texto': 'Qual componente é responsável por medir uma grandeza física e convertê-la em sinal elétrico?',
+    'texto':
+        'Qual componente é responsável por medir uma grandeza física e convertê-la em sinal elétrico?',
     'alternativas': [
       'Atuador',
       'Sensor',
@@ -42,7 +43,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'facil',
-    'texto': 'Qual linguagem gráfica de programação de CLPs se assemelha a diagramas elétricos de relés?',
+    'texto':
+        'Qual linguagem gráfica de programação de CLPs se assemelha a diagramas elétricos de relés?',
     'alternativas': [
       'Python',
       'Ladder',
@@ -66,7 +68,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'facil',
-    'texto': 'Qual atuador utiliza ar comprimido para gerar movimento linear ou rotativo?',
+    'texto':
+        'Qual atuador utiliza ar comprimido para gerar movimento linear ou rotativo?',
     'alternativas': [
       'Atuador pneumático',
       'Servomotor elétrico',
@@ -79,7 +82,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'media',
-    'texto': 'No controlador PID, qual ação é responsável por eliminar o erro em regime permanente?',
+    'texto':
+        'No controlador PID, qual ação é responsável por eliminar o erro em regime permanente?',
     'alternativas': [
       'Proporcional (P)',
       'Integral (I)',
@@ -91,7 +95,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'media',
-    'texto': 'Qual protocolo de comunicação industrial é amplamente usado sobre camada física RS-485?',
+    'texto':
+        'Qual protocolo de comunicação industrial é amplamente usado sobre camada física RS-485?',
     'alternativas': [
       'Modbus RTU',
       'HTTP/3',
@@ -103,7 +108,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'media',
-    'texto': 'Na Transformada de Laplace, onde devem estar os polos de um sistema linear para que ele seja estável?',
+    'texto':
+        'Na Transformada de Laplace, onde devem estar os polos de um sistema linear para que ele seja estável?',
     'alternativas': [
       'No semiplano direito',
       'Sobre o eixo imaginário',
@@ -127,7 +133,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'media',
-    'texto': 'Qual padrão industrial define as linguagens de programação de CLPs (Ladder, FBD, ST, SFC, IL)?',
+    'texto':
+        'Qual padrão industrial define as linguagens de programação de CLPs (Ladder, FBD, ST, SFC, IL)?',
     'alternativas': [
       'ISO 9001',
       'NR-10',
@@ -139,7 +146,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'media',
-    'texto': 'Em sistemas SCADA, qual é o papel principal do software supervisório?',
+    'texto':
+        'Em sistemas SCADA, qual é o papel principal do software supervisório?',
     'alternativas': [
       'Substituir fisicamente os sensores de campo',
       'Monitorar, adquirir dados e supervisionar processos em tempo real',
@@ -152,7 +160,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'dificil',
-    'texto': 'Qual critério algébrico determina a estabilidade de um sistema a partir dos coeficientes do polinômio característico sem calcular raízes?',
+    'texto':
+        'Qual critério algébrico determina a estabilidade de um sistema a partir dos coeficientes do polinômio característico sem calcular raízes?',
     'alternativas': [
       'Critério de Routh-Hurwitz',
       'Teorema de Thévenin',
@@ -164,7 +173,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'dificil',
-    'texto': 'Em controle no espaço de estados, quando um sistema é considerado completamente controlável?',
+    'texto':
+        'Em controle no espaço de estados, quando um sistema é considerado completamente controlável?',
     'alternativas': [
       'Quando todos os autovalores são positivos',
       'Quando a matriz de controlabilidade tem posto completo (igual à ordem n)',
@@ -188,7 +198,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'dificil',
-    'texto': 'Qual filtro ótimo recursivo é amplamente utilizado para estimar estados de sistemas dinâmicos ruidosos na robótica?',
+    'texto':
+        'Qual filtro ótimo recursivo é amplamente utilizado para estimar estados de sistemas dinâmicos ruidosos na robótica?',
     'alternativas': [
       'Filtro de Butterworth',
       'Filtro de Kalman',
@@ -200,7 +211,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'dificil',
-    'texto': 'Na cinemática direta de manipuladores robóticos, qual convenção sistematiza a atribuição de sistemas de coordenadas aos elos?',
+    'texto':
+        'Na cinemática direta de manipuladores robóticos, qual convenção sistematiza a atribuição de sistemas de coordenadas aos elos?',
     'alternativas': [
       'Convenção de Denavit-Hartenberg',
       'Notação de Voigt',
@@ -212,7 +224,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Controle e Automação',
     'dificuldade': 'dificil',
-    'texto': 'No plano Z (controle digital), qual região corresponde à estabilidade de um sistema discreto?',
+    'texto':
+        'No plano Z (controle digital), qual região corresponde à estabilidade de um sistema discreto?',
     'alternativas': [
       'Exterior do círculo unitário',
       'Interior do círculo unitário',
@@ -265,7 +278,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'facil',
-    'texto': 'Qual porta lógica retorna saída 1 apenas quando todas as suas entradas são 1?',
+    'texto':
+        'Qual porta lógica retorna saída 1 apenas quando todas as suas entradas são 1?',
     'alternativas': [
       'OR',
       'XOR',
@@ -277,7 +291,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'facil',
-    'texto': 'Qual protocolo é responsável pelo endereçamento e roteamento de pacotes na Internet?',
+    'texto':
+        'Qual protocolo é responsável pelo endereçamento e roteamento de pacotes na Internet?',
     'alternativas': [
       'IP',
       'FTP',
@@ -289,7 +304,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'facil',
-    'texto': 'Qual tipo de memória é volátil e perde seus dados quando o computador é desligado?',
+    'texto':
+        'Qual tipo de memória é volátil e perde seus dados quando o computador é desligado?',
     'alternativas': [
       'SSD NVMe',
       'ROM',
@@ -302,7 +318,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'media',
-    'texto': 'Qual é a complexidade de tempo no pior caso da busca binária em um vetor ordenado de tamanho n?',
+    'texto':
+        'Qual é a complexidade de tempo no pior caso da busca binária em um vetor ordenado de tamanho n?',
     'alternativas': [
       'O(n)',
       'O(log n)',
@@ -314,7 +331,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'media',
-    'texto': 'Em sistemas operacionais, o que ocorre durante um "deadlock" (impasse)?',
+    'texto':
+        'Em sistemas operacionais, o que ocorre durante um "deadlock" (impasse)?',
     'alternativas': [
       'A CPU entra em modo de economia de energia',
       'Dois ou mais processos ficam bloqueados esperando recursos mantidos uns pelos outros',
@@ -338,7 +356,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'media',
-    'texto': 'Qual camada do modelo OSI é responsável pelo controle de fluxo e entrega confiável ponta a ponta (como o TCP)?',
+    'texto':
+        'Qual camada do modelo OSI é responsável pelo controle de fluxo e entrega confiável ponta a ponta (como o TCP)?',
     'alternativas': [
       'Camada Física',
       'Camada de Rede',
@@ -362,7 +381,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'media',
-    'texto': 'Qual algoritmo de ordenação utiliza a estratégia "dividir para conquistar" com pivô e tem média O(n log n)?',
+    'texto':
+        'Qual algoritmo de ordenação utiliza a estratégia "dividir para conquistar" com pivô e tem média O(n log n)?',
     'alternativas': [
       'Bubble Sort',
       'Insertion Sort',
@@ -375,7 +395,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'dificil',
-    'texto': 'Em arquitetura de computadores, qual técnica evita conflitos de dados em um pipeline encaminhando resultados antes de serem gravados nos registradores?',
+    'texto':
+        'Em arquitetura de computadores, qual técnica evita conflitos de dados em um pipeline encaminhando resultados antes de serem gravados nos registradores?',
     'alternativas': [
       'Forwarding (Bypassing)',
       'Paginação sob demanda',
@@ -387,7 +408,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'dificil',
-    'texto': 'Qual teorema da computação distribuída afirma que um sistema só pode garantir duas das três propriedades: Consistência, Disponibilidade e Tolerância a Partições?',
+    'texto':
+        'Qual teorema da computação distribuída afirma que um sistema só pode garantir duas das três propriedades: Consistência, Disponibilidade e Tolerância a Partições?',
     'alternativas': [
       'Teorema CAP (Brewer)',
       'Teorema de Nyquist-Shannon',
@@ -399,7 +421,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'dificil',
-    'texto': 'Qual algoritmo de caminho mínimo em grafos ponderados funciona mesmo com arestas de peso negativo (desde que não haja ciclos negativos)?',
+    'texto':
+        'Qual algoritmo de caminho mínimo em grafos ponderados funciona mesmo com arestas de peso negativo (desde que não haja ciclos negativos)?',
     'alternativas': [
       'Dijkstra',
       'Bellman-Ford',
@@ -411,7 +434,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'dificil',
-    'texto': 'Em compiladores, qual fase verifica se a sequência de tokens obedece à gramática livre de contexto da linguagem?',
+    'texto':
+        'Em compiladores, qual fase verifica se a sequência de tokens obedece à gramática livre de contexto da linguagem?',
     'alternativas': [
       'Análise Léxica',
       'Análise Sintática (Parser)',
@@ -423,7 +447,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'dificil',
-    'texto': 'O que é "Thrashing" no gerenciamento de memória virtual de um sistema operacional?',
+    'texto':
+        'O que é "Thrashing" no gerenciamento de memória virtual de um sistema operacional?',
     'alternativas': [
       'Execução paralela perfeita entre núcleos',
       'Troca excessiva de páginas entre RAM e disco, derrubando o desempenho',
@@ -435,7 +460,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia de Computação',
     'dificuldade': 'dificil',
-    'texto': 'Qual protocolo de coerência de cache utiliza os estados Modified, Exclusive, Shared e Invalid?',
+    'texto':
+        'Qual protocolo de coerência de cache utiliza os estados Modified, Exclusive, Shared e Invalid?',
     'alternativas': [
       'MESI',
       'CSMA/CD',
@@ -452,7 +478,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'facil',
-    'texto': 'Qual é a unidade de medida da resistência elétrica no Sistema Internacional?',
+    'texto':
+        'Qual é a unidade de medida da resistência elétrica no Sistema Internacional?',
     'alternativas': [
       'Ampère (A)',
       'Volt (V)',
@@ -464,7 +491,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'facil',
-    'texto': 'De acordo com a Primeira Lei de Ohm, qual é a relação entre tensão (V), resistência (R) e corrente (I)?',
+    'texto':
+        'De acordo com a Primeira Lei de Ohm, qual é a relação entre tensão (V), resistência (R) e corrente (I)?',
     'alternativas': [
       'V = R / I',
       'V = R · I',
@@ -500,7 +528,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'facil',
-    'texto': 'Qual dispositivo protege instalações elétricas contra choques elétricos detectando correntes de fuga à terra?',
+    'texto':
+        'Qual dispositivo protege instalações elétricas contra choques elétricos detectando correntes de fuga à terra?',
     'alternativas': [
       'Disjuntor DR (Diferencial Residual)',
       'Fusível cartucho',
@@ -512,7 +541,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'facil',
-    'texto': 'Qual equipamento altera os níveis de tensão em corrente alternada por meio de indução eletromagnética?',
+    'texto':
+        'Qual equipamento altera os níveis de tensão em corrente alternada por meio de indução eletromagnética?',
     'alternativas': [
       'Retificador',
       'Transformador',
@@ -525,7 +555,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'media',
-    'texto': 'Em circuitos de corrente alternada, qual equipamento é utilizado para corrigir baixo fator de potência indutivo?',
+    'texto':
+        'Em circuitos de corrente alternada, qual equipamento é utilizado para corrigir baixo fator de potência indutivo?',
     'alternativas': [
       'Banco de capacitores',
       'Banco de resistores',
@@ -549,7 +580,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'media',
-    'texto': 'Em um sistema trifásico equilibrado ligado em estrela (Y), qual é a relação entre tensão de linha (VL) e tensão de fase (VF)?',
+    'texto':
+        'Em um sistema trifásico equilibrado ligado em estrela (Y), qual é a relação entre tensão de linha (VL) e tensão de fase (VF)?',
     'alternativas': [
       'VL = VF',
       'VL = √3 · VF',
@@ -561,7 +593,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'media',
-    'texto': 'Qual componente semicondutor permite a passagem de corrente em apenas um sentido em condições normais?',
+    'texto':
+        'Qual componente semicondutor permite a passagem de corrente em apenas um sentido em condições normais?',
     'alternativas': [
       'Diodo',
       'Triac',
@@ -585,7 +618,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'media',
-    'texto': 'Qual teorema permite substituir qualquer circuito linear de dois terminais por uma fonte de tensão equivalente em série com uma impedância?',
+    'texto':
+        'Qual teorema permite substituir qualquer circuito linear de dois terminais por uma fonte de tensão equivalente em série com uma impedância?',
     'alternativas': [
       'Teorema de Thévenin',
       'Teorema de Norton',
@@ -598,7 +632,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'dificil',
-    'texto': 'Qual equação de Maxwell relaciona a circulação do campo magnético à corrente de condução e à corrente de deslocamento?',
+    'texto':
+        'Qual equação de Maxwell relaciona a circulação do campo magnético à corrente de condução e à corrente de deslocamento?',
     'alternativas': [
       'Lei de Gauss para o magnetismo',
       'Lei de Ampère-Maxwell',
@@ -610,7 +645,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'dificil',
-    'texto': 'O que é o "efeito pelicular" (skin effect) em condutores percorridos por corrente alternada de alta frequência?',
+    'texto':
+        'O que é o "efeito pelicular" (skin effect) em condutores percorridos por corrente alternada de alta frequência?',
     'alternativas': [
       'A tendência da corrente se concentrar próximo à superfície externa do condutor',
       'A perda total de isolamento térmico do cabo',
@@ -622,7 +658,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'dificil',
-    'texto': 'Na análise de faltas assimétricas em sistemas elétricos de potência, qual método decompõe fasores desequilibrados em sequências positiva, negativa e zero?',
+    'texto':
+        'Na análise de faltas assimétricas em sistemas elétricos de potência, qual método decompõe fasores desequilibrados em sequências positiva, negativa e zero?',
     'alternativas': [
       'Componentes Simétricas (Fortescue)',
       'Transformada de Fourier Rápida',
@@ -634,7 +671,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'dificil',
-    'texto': 'Em linhas de transmissão longas, o que ocorre no Efeito Ferranti quando a linha opera em vazio ou com carga muito leve?',
+    'texto':
+        'Em linhas de transmissão longas, o que ocorre no Efeito Ferranti quando a linha opera em vazio ou com carga muito leve?',
     'alternativas': [
       'A tensão no terminal receptor torna-se maior que no terminal transmissor',
       'A frequência cai pela metade',
@@ -646,7 +684,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'dificil',
-    'texto': 'Em eletrônica de potência, qual topologia de conversor CC-CC é capaz de fornecer tensão de saída maior ou menor que a tensão de entrada com polaridade invertida?',
+    'texto':
+        'Em eletrônica de potência, qual topologia de conversor CC-CC é capaz de fornecer tensão de saída maior ou menor que a tensão de entrada com polaridade invertida?',
     'alternativas': [
       'Conversor Buck',
       'Conversor Boost',
@@ -658,7 +697,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Elétrica',
     'dificuldade': 'dificil',
-    'texto': 'Qual parâmetro define o deslizamento (escorregamento) de um motor de indução trifásico?',
+    'texto':
+        'Qual parâmetro define o deslizamento (escorregamento) de um motor de indução trifásico?',
     'alternativas': [
       'A diferença relativa entre a velocidade síncrona e a velocidade do rotor',
       'A razão entre a tensão do estator e a corrente de partida',
@@ -675,7 +715,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'facil',
-    'texto': 'Qual é a unidade de medida de tensão mecânica e pressão no Sistema Internacional?',
+    'texto':
+        'Qual é a unidade de medida de tensão mecânica e pressão no Sistema Internacional?',
     'alternativas': [
       'Newton (N)',
       'Pascal (Pa)',
@@ -687,7 +728,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'facil',
-    'texto': 'Qual lei da termodinâmica trata da conservação de energia em sistemas térmicos e mecânicos?',
+    'texto':
+        'Qual lei da termodinâmica trata da conservação de energia em sistemas térmicos e mecânicos?',
     'alternativas': [
       'Lei Zero',
       'Primeira Lei da Termodinâmica',
@@ -699,7 +741,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'facil',
-    'texto': 'Qual instrumento de metrologia é amplamente utilizado para medir diâmetros externos, internos e profundidades com precisão de centésimos de milímetro?',
+    'texto':
+        'Qual instrumento de metrologia é amplamente utilizado para medir diâmetros externos, internos e profundidades com precisão de centésimos de milímetro?',
     'alternativas': [
       'Paquímetro',
       'Torquímetro',
@@ -711,7 +754,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'facil',
-    'texto': 'Qual processo de transferência de calor ocorre principalmente nos sólidos sem transporte macroscópico de matéria?',
+    'texto':
+        'Qual processo de transferência de calor ocorre principalmente nos sólidos sem transporte macroscópico de matéria?',
     'alternativas': [
       'Convecção',
       'Condução',
@@ -723,7 +767,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'facil',
-    'texto': 'Qual elemento de máquina é usado para transmitir potência e torque entre eixos paralelos por meio de dentes engrenados?',
+    'texto':
+        'Qual elemento de máquina é usado para transmitir potência e torque entre eixos paralelos por meio de dentes engrenados?',
     'alternativas': [
       'Rolamento de esferas',
       'Engrenagem cilíndrica',
@@ -748,7 +793,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'media',
-    'texto': 'Na mecânica dos fluidos, o que o Número de Reynolds permite identificar?',
+    'texto':
+        'Na mecânica dos fluidos, o que o Número de Reynolds permite identificar?',
     'alternativas': [
       'Se o escoamento é laminar ou turbulento',
       'A temperatura de ebulição do fluido',
@@ -760,7 +806,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'media',
-    'texto': 'Qual ciclo termodinâmico ideal representa o funcionamento dos motores de combustão interna por ignição por centelha (gasolina/etanol)?',
+    'texto':
+        'Qual ciclo termodinâmico ideal representa o funcionamento dos motores de combustão interna por ignição por centelha (gasolina/etanol)?',
     'alternativas': [
       'Ciclo Rankine',
       'Ciclo Otto',
@@ -772,7 +819,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'media',
-    'texto': 'Qual tratamento térmico consiste em aquecer o aço acima da temperatura crítica e resfriá-lo bruscamente para aumentar sua dureza?',
+    'texto':
+        'Qual tratamento térmico consiste em aquecer o aço acima da temperatura crítica e resfriá-lo bruscamente para aumentar sua dureza?',
     'alternativas': [
       'Recozimento',
       'Têmpera',
@@ -784,7 +832,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'media',
-    'texto': 'Na resistência dos materiais, qual esforço interno tende a deslizar uma seção da peça em relação à seção adjacente?',
+    'texto':
+        'Na resistência dos materiais, qual esforço interno tende a deslizar uma seção da peça em relação à seção adjacente?',
     'alternativas': [
       'Tração pura',
       'Cisalhamento',
@@ -796,7 +845,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'media',
-    'texto': 'Qual princípio explica o funcionamento de prensas hidráulicas ao afirmar que a pressão aplicada a um fluido confinado se transmite integralmente?',
+    'texto':
+        'Qual princípio explica o funcionamento de prensas hidráulicas ao afirmar que a pressão aplicada a um fluido confinado se transmite integralmente?',
     'alternativas': [
       'Princípio de Arquimedes',
       'Princípio de Pascal',
@@ -821,7 +871,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'dificil',
-    'texto': 'Qual critério de falha é mais indicado para prever o início do escoamento em materiais dúcteis sob estado multiaxial de tensões?',
+    'texto':
+        'Qual critério de falha é mais indicado para prever o início do escoamento em materiais dúcteis sob estado multiaxial de tensões?',
     'alternativas': [
       'Critério de Von Mises (energia de distorção)',
       'Critério da Tensão Normal Máxima (Rankine)',
@@ -833,7 +884,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'dificil',
-    'texto': 'O que é "cavitação" em bombas centrífugas e turbinas hidráulicas?',
+    'texto':
+        'O que é "cavitação" em bombas centrífugas e turbinas hidráulicas?',
     'alternativas': [
       'Formação e implosão de bolhas de vapor quando a pressão local cai abaixo da pressão de vapor do líquido',
       'Corrosão galvânica causada por correntes parasitas',
@@ -845,7 +897,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'dificil',
-    'texto': 'No diagrama Ferro-Carbono, qual é o constituinte eutetóide formado pela mistura lamelar de ferrita e cementita?',
+    'texto':
+        'No diagrama Ferro-Carbono, qual é o constituinte eutetóide formado pela mistura lamelar de ferrita e cementita?',
     'alternativas': [
       'Austenita',
       'Perlita',
@@ -857,7 +910,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'dificil',
-    'texto': 'Na mecânica dos fluidos, qual conjunto de equações diferenciais parciais governa o movimento de fluidos viscosos?',
+    'texto':
+        'Na mecânica dos fluidos, qual conjunto de equações diferenciais parciais governa o movimento de fluidos viscosos?',
     'alternativas': [
       'Equações de Navier-Stokes',
       'Equações de Euler-Lagrange',
@@ -869,7 +923,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'dificil',
-    'texto': 'O que determina a carga crítica de Euler na análise de colunas esbeltas submetidas à compressão?',
+    'texto':
+        'O que determina a carga crítica de Euler na análise de colunas esbeltas submetidas à compressão?',
     'alternativas': [
       'A carga máxima antes que ocorra instabilidade lateral por flambagem',
       'A tensão limite de fadiga após 10 milhões de ciclos',
@@ -881,7 +936,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Engenharia Mecânica',
     'dificuldade': 'dificil',
-    'texto': 'Em transferência de calor por convecção, qual número adimensional relaciona a transferência de calor convectiva com a condutiva no fluido?',
+    'texto':
+        'Em transferência de calor por convecção, qual número adimensional relaciona a transferência de calor convectiva com a condutiva no fluido?',
     'alternativas': [
       'Número de Nusselt',
       'Número de Mach',
@@ -897,7 +953,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Bonus',
     'dificuldade': 'bonus',
-    'texto': 'Em análise dimensional, qual teorema estabelece como agrupar variáveis físicas em parâmetros adimensionais?',
+    'texto':
+        'Em análise dimensional, qual teorema estabelece como agrupar variáveis físicas em parâmetros adimensionais?',
     'alternativas': [
       'Teorema Pi de Buckingham',
       'Teorema de Stokes',
@@ -909,7 +966,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Bonus',
     'dificuldade': 'bonus',
-    'texto': 'Qual método numérico divide um domínio contínuo complexo em pequenos subdomínios para simular tensões, calor ou fluidos?',
+    'texto':
+        'Qual método numérico divide um domínio contínuo complexo em pequenos subdomínios para simular tensões, calor ou fluidos?',
     'alternativas': [
       'Método dos Elementos Finitos (MEF)',
       'Método de Newton-Raphson',
@@ -921,7 +979,8 @@ final List> dadosPerguntas = [
   {
     'tema': 'Bonus',
     'dificuldade': 'bonus',
-    'texto': 'Na engenharia de qualidade e confiabilidade, o que representa a sigla FMEA?',
+    'texto':
+        'Na engenharia de qualidade e confiabilidade, o que representa a sigla FMEA?',
     'alternativas': [
       'Análise dos Modos de Falha e seus Efeitos',
       'Fator Médio de Eficiência Automática',
