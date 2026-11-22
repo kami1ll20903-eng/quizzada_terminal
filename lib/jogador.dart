@@ -3,9 +3,5 @@ class Jogador {
   int pontos;
   int acertos;
 
-  Jogador({
-    required this.nome,
-    this.pontos = 0,
-    this.acertos = 0,
-  });
+  Jogador({required this.nome, this.pontos = 0, this.acertos = 0});
 }

@@ -5,10 +5,7 @@ class Partida {
   final List<Jogador> jogadores;
   final List<Pergunta> perguntas;
 
-  Partida({
-    required this.jogadores,
-    required this.perguntas,
-  });
+  Partida({required this.jogadores, required this.perguntas});
 
   int calcularTotalPossivelPorJogador(List<Pergunta> perguntasDoJogador) {
     return perguntasDoJogador.fold(

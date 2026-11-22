@@ -25,8 +25,12 @@ class Pergunta {
       tema: map['tema']?.toString() ?? '',
       texto: map['texto']?.toString() ?? '',
       alternativas: alternativasConvertidas,
-      indiceCorreta: map['indiceCorreta'] is int ? map['indiceCorreta'] as int : 0,
-      dificuldade: Dificuldade.deTexto(map['dificuldade']?.toString() ?? 'facil'),
+      indiceCorreta: map['indiceCorreta'] is int
+          ? map['indiceCorreta'] as int
+          : 0,
+      dificuldade: Dificuldade.deTexto(
+        map['dificuldade']?.toString() ?? 'facil',
+      ),
     );
   }
 }

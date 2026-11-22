@@ -22,7 +22,9 @@ String lerTextoNaoVazio(String prompt) {
 
 int lerNumeroJogadores() {
   while (true) {
-    final entrada = lerTextoNaoVazio('Quantos jogadores vão participar (1, 2 ou 3)? ');
+    final entrada = lerTextoNaoVazio(
+      'Quantos jogadores vão participar (1, 2 ou 3)? ',
+    );
     final numero = int.tryParse(entrada);
     if (numero != null && (numero >= 1 && numero <= 3)) {
       return numero;
@@ -40,7 +42,9 @@ List<Jogador> cadastrarJogadores(int quantidade) {
         (j) => j.nome.toLowerCase() == nome.toLowerCase(),
       );
       if (nomeJaExiste) {
-        print('Aviso: Esse nome já foi escolhido por outro jogador. Digite um nome diferente.');
+        print(
+          'Aviso: Esse nome já foi escolhido por outro jogador. Digite um nome diferente.',
+        );
       } else {
         jogadores.add(Jogador(nome: nome));
         break;
@@ -79,12 +83,16 @@ int validarRespostaLetra(String? entrada) {
     throw RespostaInvalidaException('Aviso: Digite uma letra.');
   }
   if (limpo.length > 1) {
-    throw RespostaInvalidaException('Aviso: Digite apenas uma letra (A, B, C ou D).');
+    throw RespostaInvalidaException(
+      'Aviso: Digite apenas uma letra (A, B, C ou D).',
+    );
   }
   const letrasValidas = ['A', 'B', 'C', 'D'];
   final indice = letrasValidas.indexOf(limpo);
   if (indice == -1) {
-    throw RespostaInvalidaException('Aviso: "$limpo" não é uma alternativa. Use A, B, C, D.');
+    throw RespostaInvalidaException(
+      'Aviso: "$limpo" não é uma alternativa. Use A, B, C, D.',
+    );
   }
   return indice;
 }
@@ -103,7 +111,9 @@ int lerRespostaAlternativa() {
 
 void exibirPergunta(Pergunta pergunta, int numeroAtual, int total) {
   const letras = ['A', 'B', 'C', 'D'];
-  print('\nPergunta $numeroAtual/$total (${pergunta.dificuldade.rotulo}, ${pergunta.dificuldade.pontos} pts)');
+  print(
+    '\nPergunta $numeroAtual/$total (${pergunta.dificuldade.rotulo}, ${pergunta.dificuldade.pontos} pts)',
+  );
   print(pergunta.texto);
   for (var i = 0; i < pergunta.alternativas.length; i++) {
     print('  ${letras[i]}) ${pergunta.alternativas[i]}');
@@ -114,21 +124,23 @@ List<Pergunta> sortearPerguntasPorJogador(
   List<Pergunta> todasDoTema,
   Random random,
 ) {
-  final faceis = todasDoTema.where((p) => p.dificuldade == Dificuldade.facil).toList()
-    ..shuffle(random);
-  final medias = todasDoTema.where((p) => p.dificuldade == Dificuldade.media).toList()
-    ..shuffle(random);
-  final dificeis = todasDoTema.where((p) => p.dificuldade == Dificuldade.dificil).toList()
-    ..shuffle(random);
+  final faceis =
+      todasDoTema.where((p) => p.dificuldade == Dificuldade.facil).toList()
+        ..shuffle(random);
+  final medias =
+      todasDoTema.where((p) => p.dificuldade == Dificuldade.media).toList()
+        ..shuffle(random);
+  final dificeis =
+      todasDoTema.where((p) => p.dificuldade == Dificuldade.dificil).toList()
+        ..shuffle(random);
 
-  return [
-    ...faceis.take(2),
-    ...medias.take(2),
-    ...dificeis.take(2),
-  ];
+  return [...faceis.take(2), ...medias.take(2), ...dificeis.take(2)];
 }
 
-void executarRodadaBonus(List<Jogador> empatados, List<Pergunta> perguntasBonus) {
+void executarRodadaBonus(
+  List<Jogador> empatados,
+  List<Pergunta> perguntasBonus,
+) {
   if (perguntasBonus.isEmpty) return;
 
   print('\n=== RODADA BÔNUS DE DESEMPATE (50 pts) ===');
@@ -155,7 +167,9 @@ void executarRodadaBonus(List<Jogador> empatados, List<Pergunta> perguntasBonus)
         continue;
       }
       if (jaTentaram.contains(parsed)) {
-        print('Aviso: ${empatados[parsed - 1].nome} já respondeu esta pergunta!');
+        print(
+          'Aviso: ${empatados[parsed - 1].nome} já respondeu esta pergunta!',
+        );
         continue;
       }
       numeroEscolhido = parsed;
@@ -170,7 +184,9 @@ void executarRodadaBonus(List<Jogador> empatados, List<Pergunta> perguntasBonus)
     if (resposta == pergunta.indiceCorreta) {
       jogadorAtual.pontos += pergunta.dificuldade.pontos;
       jogadorAtual.acertos += 1;
-      print('Acertou! ${jogadorAtual.nome} ganhou +${pergunta.dificuldade.pontos} pontos!');
+      print(
+        'Acertou! ${jogadorAtual.nome} ganhou +${pergunta.dificuldade.pontos} pontos!',
+      );
       return;
     } else {
       print('Errou! Passando a chance para os demais...');
@@ -191,10 +207,14 @@ void main() {
   final temaEscolhido = escolherTema();
 
   final random = Random();
-  final todasPerguntas = dadosPerguntas.map((map) => Pergunta.fromMap(map)).toList();
+  final todasPerguntas = dadosPerguntas
+      .map((map) => Pergunta.fromMap(map))
+      .toList();
 
   final perguntasDoTema = todasPerguntas
-      .where((p) => p.tema == temaEscolhido && p.dificuldade != Dificuldade.bonus)
+      .where(
+        (p) => p.tema == temaEscolhido && p.dificuldade != Dificuldade.bonus,
+      )
       .toList();
 
   // Separa 6 perguntas exclusivas (2 fáceis, 2 médias, 2 difíceis) para cada jogador
@@ -202,7 +222,9 @@ void main() {
   final perguntasUsadas = <Pergunta>{};
 
   for (final jogador in jogadores) {
-    final disponiveis = perguntasDoTema.where((p) => !perguntasUsadas.contains(p)).toList();
+    final disponiveis = perguntasDoTema
+        .where((p) => !perguntasUsadas.contains(p))
+        .toList();
     final sorteadas = sortearPerguntasPorJogador(disponiveis, random);
     perguntasUsadas.addAll(sorteadas);
     perguntasPorJogador[jogador] = sorteadas;
@@ -245,16 +267,21 @@ void main() {
   if (jogadores.length > 1) {
     final rankingParcial = partida.obterRanking();
     final maiorPontuacao = rankingParcial.first.pontos;
-    final empatados = rankingParcial.where((j) => j.pontos == maiorPontuacao).toList();
+    final empatados = rankingParcial
+        .where((j) => j.pontos == maiorPontuacao)
+        .toList();
 
     if (empatados.length > 1) {
       print('\nHouve empate com $maiorPontuacao pontos!');
-      final desejaBonus = lerTextoNaoVazio('Desejam jogar a pergunta bônus de 50 pts? (S/N): ');
+      final desejaBonus = lerTextoNaoVazio(
+        'Desejam jogar a pergunta bônus de 50 pts? (S/N): ',
+      );
       if (desejaBonus.toUpperCase() == 'S') {
-        final bonusDisponiveis = todasPerguntas
-            .where((p) => p.dificuldade == Dificuldade.bonus)
-            .toList()
-          ..shuffle(random);
+        final bonusDisponiveis =
+            todasPerguntas
+                .where((p) => p.dificuldade == Dificuldade.bonus)
+                .toList()
+              ..shuffle(random);
         executarRodadaBonus(empatados, bonusDisponiveis);
       }
     }
@@ -266,7 +293,9 @@ void main() {
   for (var i = 0; i < rankingFinal.length; i++) {
     final jogador = rankingFinal[i];
     final perguntasDele = perguntasPorJogador[jogador] ?? <Pergunta>[];
-    final totalPossivel = partida.calcularTotalPossivelPorJogador(perguntasDele);
+    final totalPossivel = partida.calcularTotalPossivelPorJogador(
+      perguntasDele,
+    );
     print(
       '${i + 1}º ${jogador.nome}: ${jogador.pontos}/$totalPossivel pontos '
       '(${jogador.acertos}/${perguntasDele.length} acertos)',
